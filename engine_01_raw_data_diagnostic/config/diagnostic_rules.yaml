@@ -1,0 +1,22 @@
+missing_threshold:
+  warning: 0.2
+  critical: 0.5
+
+duplicate_threshold:
+  warning: 0.05
+
+date_formats_allowed:
+  - "%Y-%m-%d"
+  - "%d-%m-%Y"
+
+numeric_locale:
+  allow_comma: true
+  allow_dot: true
+
+expected_schema:
+  - id
+  - name
+  - email
+  - amount
+  - order_date
+  - city

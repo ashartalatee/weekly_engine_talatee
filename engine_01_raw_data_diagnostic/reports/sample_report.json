@@ -1,0 +1,50 @@
+{
+    "missing": {
+        "id": {
+            "missing_count": 0,
+            "missing_ratio": 0.0,
+            "severty": "ok"
+        },
+        "name": {
+            "missing_count": 1,
+            "missing_ratio": 0.143,
+            "severty": "ok"
+        },
+        "email": {
+            "missing_count": 0,
+            "missing_ratio": 0.0,
+            "severty": "ok"
+        },
+        "amount": {
+            "missing_count": 1,
+            "missing_ratio": 0.143,
+            "severty": "ok"
+        },
+        "order_date": {
+            "missing_count": 0,
+            "missing_ratio": 0.0,
+            "severty": "ok"
+        },
+        "city": {
+            "missing_count": 1,
+            "missing_ratio": 0.143,
+            "severty": "ok"
+        }
+    },
+    "duplicates": {
+        "exact_duplicates_count": 2,
+        "near_duplicates_count": 2
+    },
+    "format": {
+        "order_date": {
+            "format_anomalies_count": 5
+        },
+        "id_numeric_anomalies": 0
+    },
+    "schema": {
+        "missing_columns": [],
+        "extra_columns": [],
+        "total_columns_expected": 6,
+        "total_columns_actual": 6
+    }
+}
