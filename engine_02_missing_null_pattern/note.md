@@ -18,8 +18,8 @@ Engine ini membuka mata:
 - Apakah missing terjadi acak atau berpola
 
 ## Perubahan cara berpikir saya
-❌ Dulu: "Berapa banyak data kosong?"
-✅ Sekarang: "KENAPA data ini kosong?"
+ Dulu: "Berapa banyak data kosong?"
+ Sekarang: "KENAPA data ini kosong?"
 
 ## Output yang saya inginkan
 - Ringkasan missing per kolom
