@@ -1,0 +1,38 @@
+# Missing & Null Definition Rules
+# Engine 02 — Talatee Data Engine
+
+# Nilai yang DIANGGAP missing (string-based)
+missing_strings:
+  - ""
+  - " "
+  - "NA"
+  - "N/A"
+  - "NULL"
+  - "null"
+  - "None"
+  - "-"
+  - "--"
+  - "?"
+
+# Apakah angka 0 dianggap missing?
+zero_as_missing:
+  enabled: false
+  reason: >
+    Pada banyak kasus bisnis,
+    0 adalah nilai valid (contoh: stok habis).
+
+# Apakah string "0" dianggap missing?
+string_zero_as_missing:
+  enabled: false
+
+# Kolom tertentu punya aturan khusus
+column_specific_rules:
+  phone:
+    missing_if:
+      - ""
+      - "0"
+      - "-"
+  email:
+    missing_if:
+      - ""
+      - "invalid"
