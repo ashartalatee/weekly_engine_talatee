@@ -1,0 +1,22 @@
+# temp & lock files
+.~lock.*
+*.lock
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+env/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.~lock.*#
+
+# Data hasil run
+reports/*.json
