@@ -1,0 +1,8 @@
+id,order_date,amount,city,customer_name,
+1,2023-01-02,1000,Jakarta,Andi,
+2,02/01/23,1,jakarta,ANDI,
+3,01/02/23,Rp 1.000,JAKARTA.,Andi ,
+4,2023/01/02,1,0,Jkt,and i
+5,,1000,Jakarta Selatan,Andi,
+6,13-01-2023,IDR1000,jakarta selatan,ANDI.,
+7,2023-13-01,1000,Jakarta,Andi,

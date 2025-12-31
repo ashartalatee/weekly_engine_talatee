@@ -1,0 +1,39 @@
+{
+  "engine": "Format Anomaly Detecto",
+  "status": "COMPLETED",
+  "summary": {
+    "order_date": {
+      "total": 7,
+      "patterns": {
+        "YYYY-MM-DD": 2,
+        "DD/MM/YY": 2,
+        "YYYY/MM/DD": 1,
+        "UNKNOWN_PATTERN": 1,
+        "DD-MM-YYYY": 1
+      }
+    },
+    "amount": {
+      "total": 7,
+      "patterns": {
+        "PLAIN_NUMBER": 5,
+        "CURRENCY_PREFIX": 2
+      }
+    },
+    "city": {
+      "total": 7,
+      "patterns": {
+        "NORMAL": 3,
+        "ALL_LOWERCASE": 2,
+        "ALL_UPPERCASE": 1,
+        "MULTI_WORD": 1
+      }
+    },
+    "customer_name": {
+      "total": 7,
+      "patterns": {
+        "NORMAL": 5,
+        "ALL_UPPERCASE": 2
+      }
+    }
+  }
+}
