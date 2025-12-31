@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "total_records": 5,
+    "exact_duplicates": 0,
+    "near_duplicates_high": 3,
+    "near_duplicates_medium": 0
+  },
+  "samples": {
+    "exact_duplicates": [],
+    "near_duplicates": [
+      {
+        "row_i": 0,
+        "row_j": 2,
+        "value_i": "Andi",
+        "value_j": "Andi",
+        "similarity_score": 100.0
+      },
+      {
+        "row_i": 0,
+        "row_j": 4,
+        "value_i": "Andi",
+        "value_j": "Andi",
+        "similarity_score": 100.0
+      },
+      {
+        "row_i": 2,
+        "row_j": 4,
+        "value_i": "Andi",
+        "value_j": "Andi",
+        "similarity_score": 100.0
+      }
+    ]
+  },
+  "generated_at": "2025-12-31T04:24:10.693785"
+}

@@ -114,11 +114,6 @@ Dengan report, engine ini milik klien.
 
 
 ---
-
-## `note.md` — PENUTUP ENGINE (HARI 7)
-
-Tambahkan di bawah Hari 6:
-
 Hari 7 — Engine Final & Publish
 
 Hari ini aku tidak menambah fitur.
