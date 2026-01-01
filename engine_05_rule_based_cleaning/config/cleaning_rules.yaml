@@ -1,0 +1,50 @@
+dataset:
+  name: "sample_customer_data"
+  description: "Contoh dataset customer dengan data mentah"
+
+settings:
+  fail_on_error: true
+  log_level: "INFO"
+
+columns:
+
+  customer_name:
+    type: "text"
+    actions:
+      - action: "trim"
+      - action: "lowercase"
+      - action: "replace"
+        params:
+          mapping:
+            "pt.": "pt"
+            "cv.": "cv"
+      - action: "regex_replace"
+        params:
+          pattern: "[^a-z0-9 ]"
+          replacement: ""
+
+  email:
+    type: "text"
+    actions:
+      - action: "trim"
+      - action: "lowercase"
+
+  total_spent:
+    type: "numeric"
+    actions:
+      - action: "remove_symbols"
+        params:
+          symbols: ["Rp", ".", ",", " "]
+      - action: "to_float"
+
+  transaction_date:
+    type: "date"
+    actions:
+      - action: "parse_date"
+        params:
+          input_formats:
+            - "%d-%m-%Y"
+            - "%Y/%m/%d"
+            - "%d/%m/%Y"
+            - "%Y-%m-%d"
+          output_format: "%Y-%m-%d"
