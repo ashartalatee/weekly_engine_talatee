@@ -1,0 +1,6 @@
+id,amount,description,normalized_value,currency
+2,1200.5,usd sales,1200.5,IDR
+6,-1,refund,-1.0,IDR
+7,-2000,accounting negative,-2000.0,IDR
+8,Rp -500.000,chargeback,-500.0,IDR
+11,"USD 1,200.00",mixed currency,1200.0,USD

@@ -1,0 +1,52 @@
+{
+  "total_rows": 14,
+  "success": 5,
+  "failed": 9,
+  "errors": [
+    {
+      "row": 1,
+      "raw_value": "Rp 1.250.000",
+      "error": "Failed to parse numeric: 1.250.000"
+    },
+    {
+      "row": 3,
+      "raw_value": "1.200,50",
+      "error": "Unsupported numeric format: eu_separator | value=1.200,50"
+    },
+    {
+      "row": 4,
+      "raw_value": "2.5M",
+      "error": "Currency is missing"
+    },
+    {
+      "row": 5,
+      "raw_value": "750K",
+      "error": "Currency is missing"
+    },
+    {
+      "row": 9,
+      "raw_value": "",
+      "error": "Value is None"
+    },
+    {
+      "row": 10,
+      "raw_value": "N/A",
+      "error": "Value is None"
+    },
+    {
+      "row": 12,
+      "raw_value": "1 200,50",
+      "error": "Unsupported numeric format: SPACE_SEPARATOR | value=1 200,50"
+    },
+    {
+      "row": 13,
+      "raw_value": "1.2B",
+      "error": "Currency is missing"
+    },
+    {
+      "row": 14,
+      "raw_value": "5.00%",
+      "error": "Unsupported numeric format: PERCENTAGE | value=5.00%"
+    }
+  ]
+}

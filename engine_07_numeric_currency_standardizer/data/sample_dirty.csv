@@ -1,0 +1,15 @@
+id,amount,description
+1,Rp 1.250.000,penjualan jakarta
+2,1200.5,usd sales
+3,"1.200,50",europe format
+4,2.5M,annual revenue
+5,750K,marketing budget
+6,-1,refund
+7,-2000,accounting negative
+8,Rp -500.000,chargeback
+9,,missing value
+10,N/A,invalid numeric
+11,"USD 1,200.00",mixed currency
+12,"1 200,50",space separator
+13,1.2B,big number
+14,5.00%,percentage value

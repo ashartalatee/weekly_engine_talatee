@@ -1,0 +1,9 @@
+currencies:
+  IDR:
+    symbols: ["Rp", "IDR"]
+  USD:
+    symbols: ["$", "USD"]
+  EUR:
+    symbols: ["€", "EUR"]
+
+default_currency: IDR
