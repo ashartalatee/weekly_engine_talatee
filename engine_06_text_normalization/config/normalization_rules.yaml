@@ -1,0 +1,46 @@
+# GENERAL TEXT NORMALIZATION
+general:
+  trim_whitespace: true
+  collapse_spaces: true
+  lowercase: true
+  remove_special_chars: false
+  replace_patterns:
+    - pattern: "\\s+,"
+      replace: ","
+    - pattern: ",\\s+"
+      replace: ", "
+
+# NAME NORMALIZATION
+name:
+  title_case: true
+  remove_numbers: true
+  remove_extra_symbols: true
+  replace_patterns:
+    - pattern: "0"
+      replace: "o"
+    - pattern: "\\."
+      replace: ""
+  blocked_words:
+    - "mr"
+    - "mrs"
+    - "ms"
+
+# CATEGORY NORMALIZATION
+category:
+  uppercase: true
+  mapping:
+    MKN: MAKANAN
+    MKNN: MAKANAN
+    MAKAN: MAKANAN
+    MAKANAN : MAKANAN
+
+# ADDRESS NORMALIZATION
+address:
+  lowercase: true
+  expand_abbreviations:
+    jl: jalan
+    jln: jalan
+    no: nomor
+  replace_patterns:
+    - pattern: "nomor\\s+(\\w+)"
+      replace: "no \\1"
