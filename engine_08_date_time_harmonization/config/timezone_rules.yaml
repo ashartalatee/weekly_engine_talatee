@@ -1,0 +1,9 @@
+default_timezone: "Asia/Jakarta"
+
+known_timezones:
+  WIB: "Asia/Jakarta"
+  WITA: "Asia/Makassar"
+  WIT: "Asia/Jayapura"
+  UTC: "UTC"
+
+output_timezone: "UTC"

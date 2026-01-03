@@ -1,0 +1,28 @@
+formats:
+  - name: ISO_DATE
+    pattern: "%Y-%m-%d"
+    priority: 1
+
+  - name: ISO_DATETIME
+    pattern: "%Y-%m-%d %H:%M:%S"
+    priority: 1
+
+  - name: SLASH_DMY
+    pattern: "%d/%m/%Y"
+    priority: 2
+
+  - name: SLASH_MDY
+    pattern: "%m/%d/%Y"
+    priority: 3
+
+  - name: DASH_DMY
+    pattern: "%d-%m-%Y"
+    priority: 2
+
+  - name: TEXT_MONTH
+    pattern: "%b %d %Y"
+    priority: 3
+
+  - name: COMPACT
+    pattern: "%Y%m%d"
+    priority: 2
