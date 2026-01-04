@@ -1,0 +1,60 @@
+{
+  "engine": "engine_09_multi_file_loader",
+  "data_directory": "data/raw_samples",
+  "total_files_found": 2,
+  "files_loaded_successfully": 2,
+  "files_failed": 0,
+  "schemas": [
+    {
+      "file_name": "sales_feb.xlsx",
+      "total_rows": 2,
+      "total_columns": 4,
+      "columns": [
+        {
+          "name": "id_order",
+          "dtype": "int64"
+        },
+        {
+          "name": "nama_pelanggan",
+          "dtype": "object"
+        },
+        {
+          "name": "total",
+          "dtype": "int64"
+        },
+        {
+          "name": "tanggal",
+          "dtype": "datetime64[ns]"
+        }
+      ]
+    },
+    {
+      "file_name": "sales_jan.csv",
+      "total_rows": 3,
+      "total_columns": 4,
+      "columns": [
+        {
+          "name": "order_id",
+          "dtype": "int64"
+        },
+        {
+          "name": "customer_name",
+          "dtype": "object"
+        },
+        {
+          "name": "amount",
+          "dtype": "float64"
+        },
+        {
+          "name": "order_date",
+          "dtype": "object"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "error_summary": {
+    "total_errors": 0,
+    "by_stage": {}
+  }
+}

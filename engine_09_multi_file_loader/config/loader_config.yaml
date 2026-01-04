@@ -1,0 +1,12 @@
+allowed_extensions:
+  - csv
+  - xlsx
+  - json
+
+recursive: true
+
+encoding_fallbacks:
+  - utf-8
+  - latin1
+
+max_file_size_mb: 50
