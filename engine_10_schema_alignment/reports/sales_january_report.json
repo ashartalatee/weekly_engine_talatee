@@ -1,0 +1,10 @@
+{
+  "source_file": "sales_january.csv",
+  "summary": {
+    "renamed_columns": {},
+    "added_columns": [],
+    "dropped_columns": [],
+    "empty_columns": []
+  },
+  "notes": "Alignment dilakukan berdasarkan target schema dan aturan manual."
+}

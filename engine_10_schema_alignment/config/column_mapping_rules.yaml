@@ -1,0 +1,9 @@
+mappings:
+  cust_name: customer_name
+  nama_pelanggan: customer_name
+
+  date_order: order_date
+  tanggal: order_date
+
+  amount: total
+  total_harga: total

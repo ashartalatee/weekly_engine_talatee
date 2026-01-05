@@ -1,0 +1,23 @@
+{
+  "source_file": "sales_march.csv",
+  "summary": {
+    "renamed_columns": {
+      "nama_pelanggan": "customer_name",
+      "tanggal": "order_date",
+      "total_harga": "total"
+    },
+    "added_columns": [
+      "order_id",
+      "customer_name",
+      "order_date",
+      "total"
+    ],
+    "dropped_columns": [
+      "id_pesanan"
+    ],
+    "empty_columns": [
+      "order_id"
+    ]
+  },
+  "notes": "Alignment dilakukan berdasarkan target schema dan aturan manual."
+}

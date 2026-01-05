@@ -1,0 +1,18 @@
+schema_name: sales_v1
+
+columns:
+  - name: order_id
+    type: int
+    required: true
+
+  - name: customer_name
+    type: string
+    required: true
+
+  - name: order_date
+    type: date
+    required: true
+
+  - name: total
+    type: float
+    required: true
