@@ -1,0 +1,194 @@
+[
+  {
+    "version_id": 1,
+    "created_at": "2026-01-06T04:21:18.211092",
+    "snapshot": {
+      "source": "raw_v1.csv",
+      "created_at": "2026-01-06T04:21:18.205435",
+      "row_count": 3,
+      "columns": [
+        "id",
+        "name",
+        "amount",
+        "date"
+      ],
+      "data_types": {
+        "id": "int64",
+        "name": "object",
+        "amount": "float64",
+        "date": "object"
+      },
+      "missing_values": {
+        "id": 0,
+        "name": 0,
+        "amount": 1,
+        "date": 0
+      },
+      "duplicate_rows": 0,
+      "sample_rows": [
+        {
+          "id": 1,
+          "name": "Andi",
+          "amount": 10000.0,
+          "date": "2023-01-01"
+        },
+        {
+          "id": 2,
+          "name": "Budi",
+          "amount": NaN,
+          "date": "01/02/23"
+        },
+        {
+          "id": 3,
+          "name": "Andi",
+          "amount": 10000.0,
+          "date": "2023-01-01"
+        }
+      ]
+    }
+  },
+  {
+    "version_id": 2,
+    "created_at": "2026-01-06T04:21:18.231587",
+    "snapshot": {
+      "source": "raw_v2.csv",
+      "created_at": "2026-01-06T04:21:18.214924",
+      "row_count": 3,
+      "columns": [
+        "id",
+        "name",
+        "amount",
+        "date"
+      ],
+      "data_types": {
+        "id": "int64",
+        "name": "object",
+        "amount": "int64",
+        "date": "object"
+      },
+      "missing_values": {
+        "id": 0,
+        "name": 0,
+        "amount": 0,
+        "date": 0
+      },
+      "duplicate_rows": 0,
+      "sample_rows": [
+        {
+          "id": 1,
+          "name": "Andi",
+          "amount": 10000,
+          "date": "2023-01-01"
+        },
+        {
+          "id": 2,
+          "name": "Budi",
+          "amount": 15000,
+          "date": "2023-02-01"
+        },
+        {
+          "id": 3,
+          "name": "Andi",
+          "amount": 10000,
+          "date": "2023-01-01"
+        }
+      ]
+    }
+  },
+  {
+    "version_id": 3,
+    "created_at": "2026-01-06T04:27:55.453910",
+    "snapshot": {
+      "source": "raw_v1.csv",
+      "created_at": "2026-01-06T04:27:55.447876",
+      "row_count": 3,
+      "columns": [
+        "id",
+        "name",
+        "amount",
+        "date"
+      ],
+      "data_types": {
+        "id": "int64",
+        "name": "object",
+        "amount": "float64",
+        "date": "object"
+      },
+      "missing_values": {
+        "id": 0,
+        "name": 0,
+        "amount": 1,
+        "date": 0
+      },
+      "duplicate_rows": 0,
+      "sample_rows": [
+        {
+          "id": 1,
+          "name": "Andi",
+          "amount": 10000.0,
+          "date": "2023-01-01"
+        },
+        {
+          "id": 2,
+          "name": "Budi",
+          "amount": NaN,
+          "date": "01/02/23"
+        },
+        {
+          "id": 3,
+          "name": "Andi",
+          "amount": 10000.0,
+          "date": "2023-01-01"
+        }
+      ]
+    }
+  },
+  {
+    "version_id": 4,
+    "created_at": "2026-01-06T04:27:55.479194",
+    "snapshot": {
+      "source": "raw_v2.csv",
+      "created_at": "2026-01-06T04:27:55.457461",
+      "row_count": 3,
+      "columns": [
+        "id",
+        "name",
+        "amount",
+        "date"
+      ],
+      "data_types": {
+        "id": "int64",
+        "name": "object",
+        "amount": "int64",
+        "date": "object"
+      },
+      "missing_values": {
+        "id": 0,
+        "name": 0,
+        "amount": 0,
+        "date": 0
+      },
+      "duplicate_rows": 0,
+      "sample_rows": [
+        {
+          "id": 1,
+          "name": "Andi",
+          "amount": 10000,
+          "date": "2023-01-01"
+        },
+        {
+          "id": 2,
+          "name": "Budi",
+          "amount": 15000,
+          "date": "2023-02-01"
+        },
+        {
+          "id": 3,
+          "name": "Andi",
+          "amount": 10000,
+          "date": "2023-01-01"
+        }
+      ]
+    }
+  }
+]

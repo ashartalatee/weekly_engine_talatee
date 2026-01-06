@@ -1,0 +1,14 @@
+versioning:
+  track:
+    - row_count
+    - column_schema
+    - missing_values
+    - duplicate_rows
+    - data_types
+
+  save_snapshot: true
+  allow_overwrite: false
+
+report:
+  format: json
+  include_summary: true
