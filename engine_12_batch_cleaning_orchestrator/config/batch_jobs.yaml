@@ -1,0 +1,10 @@
+jobs:
+  - name: clean_sales_data
+    input_path: data/input/sales
+    output_path: data/output/sales
+    retry: 2
+
+  - name: clean_customer_data
+    input_path: data/input/customers
+    output_path: data/output/customers
+    retry: 2
