@@ -1,0 +1,11 @@
+# config/pagination_rules.yaml
+
+type: page_based
+
+page_param: "_page"
+limit_param: "_limit"
+start_page: 1
+limit: 10
+
+stop_condition:
+  when_response_empty: true

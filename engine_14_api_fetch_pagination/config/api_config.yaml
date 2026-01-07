@@ -1,0 +1,13 @@
+# config/api_config.yaml
+
+base_url: "https://jsonplaceholder.typicode.com"
+
+endpoint: "/posts"
+
+headers:
+  Content-Type: "application/json"
+
+params:
+  _limit: 10
+
+timeout: 10
