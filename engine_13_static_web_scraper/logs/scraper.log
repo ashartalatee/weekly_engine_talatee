@@ -1,0 +1,10 @@
+2026-01-07 19:53:48,759 | INFO | Fetching URL: https://books.toscrape.com/
+2026-01-07 19:53:48,759 | WARNING | Attempt 1 failed: name 'default_headers' is not defined
+2026-01-07 19:53:50,775 | INFO | Fetching URL: https://books.toscrape.com/
+2026-01-07 19:53:50,775 | WARNING | Attempt 2 failed: name 'default_headers' is not defined
+2026-01-07 19:53:54,777 | INFO | Fetching URL: https://books.toscrape.com/
+2026-01-07 19:53:54,777 | WARNING | Attempt 3 failed: name 'default_headers' is not defined
+2026-01-07 19:53:54,777 | ERROR | Max retry reached. Giving up.
+2026-01-07 19:53:54,777 | ERROR | Fetch failed for https://books.toscrape.com/: name 'default_headers' is not defined
+2026-01-07 19:55:00,580 | INFO | Fetching URL: https://books.toscrape.com/
+2026-01-07 19:57:17,770 | INFO | Fetching URL: https://books.toscrape.com/

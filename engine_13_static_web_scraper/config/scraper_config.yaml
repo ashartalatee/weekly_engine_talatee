@@ -1,0 +1,19 @@
+scraper:
+  name: "static_web_scraper_basic"
+  description: "Scrape data from static website using CSS selectors"
+
+request:
+  url: "https://books.toscrape.com/"
+  timeout: 10
+  headers:
+    User-Agent: "Mozilla/5.0 (compatible; TalateeScraper/1.0)"
+
+selectors:
+  container: "article.product_pod"
+  fields:
+    title: "h3 a"
+    price: "p.price_color"
+
+output:
+  format: "csv"     # csv / json
+  path: "data/sample_output.csv"
