@@ -1,0 +1,23 @@
+version: 1
+
+logger:
+  name: talatee_engine
+  level: INFO
+
+handlers:
+  file:
+    enabled: true
+    path: logs/app.log
+    level: INFO
+
+  error_file:
+    enabled: true
+    path: logs/error.log
+    level: ERROR
+
+  console:
+    enabled: true
+    level: INFO
+
+format:
+  type: json

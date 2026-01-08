@@ -1,0 +1,9 @@
+retry:
+  max_attempts: 3
+  base_delay_seconds: 2
+  backoff_multiplier: 2
+
+retryable_errors:
+  - NetworkError
+  - TimeoutError
+  - RateLimitError

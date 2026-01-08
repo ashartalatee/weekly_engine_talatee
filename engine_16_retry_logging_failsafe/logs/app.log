@@ -1,0 +1,96 @@
+{"timestamp": "2026-01-08T22:20:52.406630", "level": "INFO", "logger": "engine16", "message": "Logger initialized"}
+{"timestamp": "2026-01-08T22:20:52.407628", "level": "WARNING", "logger": "engine16", "message": "This is a warning test"}
+{"timestamp": "2026-01-08T22:20:52.408626", "level": "ERROR", "logger": "engine16", "message": "This is an error test"}
+{"timestamp": "2026-01-08T23:28:09.336605", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 1}"}
+{"timestamp": "2026-01-08T23:28:09.355967", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.361952", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.371612", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 1}"}
+{"timestamp": "2026-01-08T23:28:09.377590", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 2}"}
+{"timestamp": "2026-01-08T23:28:09.383574", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.390555", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.394544", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 2}"}
+{"timestamp": "2026-01-08T23:28:09.431446", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 3}"}
+{"timestamp": "2026-01-08T23:28:09.444411", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.508240", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.524196", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 3}"}
+{"timestamp": "2026-01-08T23:28:09.592016", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 4}"}
+{"timestamp": "2026-01-08T23:28:09.605979", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.607975", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.609970", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 4}"}
+{"timestamp": "2026-01-08T23:28:09.644085", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 5}"}
+{"timestamp": "2026-01-08T23:28:09.650070", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.653061", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.655056", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 5}"}
+{"timestamp": "2026-01-08T23:28:09.706041", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 6}"}
+{"timestamp": "2026-01-08T23:28:09.714020", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.715017", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.718007", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 6}"}
+{"timestamp": "2026-01-08T23:28:09.770198", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 7}"}
+{"timestamp": "2026-01-08T23:28:09.793133", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:09.794131", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:09.843999", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 7}"}
+{"timestamp": "2026-01-08T23:28:10.010482", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 8}"}
+{"timestamp": "2026-01-08T23:28:10.058193", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:10.121025", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:10.157926", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 8}"}
+{"timestamp": "2026-01-08T23:28:10.212951", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 9}"}
+{"timestamp": "2026-01-08T23:28:10.219941", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:10.221928", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:10.224920", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 9}"}
+{"timestamp": "2026-01-08T23:28:10.262829", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 10}"}
+{"timestamp": "2026-01-08T23:28:10.264814", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function fetch_data"}
+{"timestamp": "2026-01-08T23:28:10.265810", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: fetch_data() missing 1 required positional argument: 'job_id'"}
+{"timestamp": "2026-01-08T23:28:10.271796", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: fetch_data() missing 1 required positional argument: 'job_id' | Context: {'job_id': 10}"}
+{"timestamp": "2026-01-08T23:28:10.306700", "level": "INFO", "logger": "engine16_runner", "message": "Final results: [None, None, None, None, None, None, None, None, None, None]"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 1}"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 2}"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 1: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:43.769440", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 1 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:44.777767", "level": "INFO", "logger": "retry_policy", "message": "Attempt 2 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:44.779762", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: Invalid data format"}
+{"timestamp": "2026-01-08T23:36:44.784473", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: Invalid data format | Context: {'job_id': 2}"}
+{"timestamp": "2026-01-08T23:36:44.798055", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 3}"}
+{"timestamp": "2026-01-08T23:36:44.798055", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:44.798055", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 1: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:44.798055", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 1 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:45.812088", "level": "INFO", "logger": "retry_policy", "message": "Attempt 2 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:45.813097", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 2: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:45.818105", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 2 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:47.821603", "level": "INFO", "logger": "retry_policy", "message": "Attempt 3 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:47.821603", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 4}"}
+{"timestamp": "2026-01-08T23:36:47.821603", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:47.821603", "level": "ERROR", "logger": "retry_policy", "message": "Non-retryable error: Invalid data format"}
+{"timestamp": "2026-01-08T23:36:47.835815", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: Invalid data format | Context: {'job_id': 4}"}
+{"timestamp": "2026-01-08T23:36:47.898470", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 5}"}
+{"timestamp": "2026-01-08T23:36:47.898470", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:47.898470", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 1: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:47.898470", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 1 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:48.904270", "level": "INFO", "logger": "retry_policy", "message": "Attempt 2 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:48.904270", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 6}"}
+{"timestamp": "2026-01-08T23:36:48.904270", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:48.904270", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 1: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:48.904270", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 1 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:49.916406", "level": "INFO", "logger": "retry_policy", "message": "Attempt 2 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:49.916406", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 2: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:49.916406", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 2 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:51.925039", "level": "INFO", "logger": "retry_policy", "message": "Attempt 3 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:51.925039", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 7}"}
+{"timestamp": "2026-01-08T23:36:51.925039", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:51.925039", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 8}"}
+{"timestamp": "2026-01-08T23:36:51.939891", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:51.943877", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 1: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:51.948037", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 1 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:52.974592", "level": "INFO", "logger": "retry_policy", "message": "Attempt 2 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:52.974592", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 2: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:52.974592", "level": "INFO", "logger": "retry_policy", "message": "Sleeping for 2 seconds before retry"}
+{"timestamp": "2026-01-08T23:36:54.983214", "level": "INFO", "logger": "retry_policy", "message": "Attempt 3 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:54.986207", "level": "WARNING", "logger": "retry_policy", "message": "Retryable error on attempt 3: Temporary network issue"}
+{"timestamp": "2026-01-08T23:36:54.991194", "level": "ERROR", "logger": "retry_policy", "message": "Max retry attempts reached"}
+{"timestamp": "2026-01-08T23:36:55.002096", "level": "ERROR", "logger": "failsafe", "message": "Job failed safely: Temporary network issue | Context: {'job_id': 8}"}
+{"timestamp": "2026-01-08T23:36:55.047858", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 9}"}
+{"timestamp": "2026-01-08T23:36:55.047858", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:55.047858", "level": "INFO", "logger": "failsafe", "message": "Executing job: {'job_id': 10}"}
+{"timestamp": "2026-01-08T23:36:55.047858", "level": "INFO", "logger": "retry_policy", "message": "Attempt 1 executing function <lambda>"}
+{"timestamp": "2026-01-08T23:36:55.047858", "level": "INFO", "logger": "engine16_runner", "message": "Final results: [{'job_id': 1, 'data': 'OK'}, None, {'job_id': 3, 'data': 'OK'}, None, {'job_id': 5, 'data': 'OK'}, {'job_id': 6, 'data': 'OK'}, {'job_id': 7, 'data': 'OK'}, None, {'job_id': 9, 'data': 'OK'}, {'job_id': 10, 'data': 'OK'}]"}

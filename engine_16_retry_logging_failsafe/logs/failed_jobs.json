@@ -1,0 +1,93 @@
+[
+  {
+    "job": {
+      "job_id": 1
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 2
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 3
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 4
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 5
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 6
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 7
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 8
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 9
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 10
+    },
+    "error": "fetch_data() missing 1 required positional argument: 'job_id'",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 2
+    },
+    "error": "Invalid data format",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 4
+    },
+    "error": "Invalid data format",
+    "function": "task"
+  },
+  {
+    "job": {
+      "job_id": 8
+    },
+    "error": "Temporary network issue",
+    "function": "task"
+  }
+]
