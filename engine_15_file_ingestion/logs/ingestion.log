@@ -1,0 +1,3 @@
+2026-01-08 11:03:34,088 | ERROR | File '.~lock.kosong.csv#' gagal diproses | Alasan: invalid_extension
+2026-01-08 11:03:34,088 | ERROR | File '.~lock.sales.csv#' gagal diproses | Alasan: invalid_extension
+2026-01-08 11:03:34,093 | ERROR | File 'kosong.csv' gagal diproses | Alasan: No columns to parse from file

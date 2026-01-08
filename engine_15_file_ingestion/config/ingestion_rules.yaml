@@ -1,0 +1,22 @@
+sources:
+  local:
+    enabled: true
+    path: "data/raw_input"
+
+  sftp:
+    enabled: false
+    host: ""
+    port: 22
+    username: ""
+    password: ""
+    remote_path: ""
+
+rules:
+  allowed_extensions:
+    - csv
+    - xlsx
+    - json
+
+  on_error:
+    action: "skip"
+    log: true
