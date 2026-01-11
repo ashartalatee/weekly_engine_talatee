@@ -1,0 +1,3 @@
+rules:
+  drop_empty_rows: true
+  trim_whitespace: true

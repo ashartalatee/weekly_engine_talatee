@@ -1,0 +1,3 @@
+thresholds:
+  max_missing_ratio: 0.2
+  max_duplicate_ratio: 0.05

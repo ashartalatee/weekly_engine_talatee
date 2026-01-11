@@ -22,3 +22,21 @@ Masalah terbesar data bukan teknis,
 tapi tidak adanya satu alur yang bisa dijelaskan ke klien.
 
 Engine ini adalah alat komunikasi, bukan sekadar kode.
+
+# Day 02 — Pipeline Mental Model
+
+Pipeline bukan soal urutan teknis,
+tapi urutan tanggung jawab.
+
+Extract bertugas membawa data masuk.
+Clean bertugas memperbaiki sebisanya.
+Validate bertugas melindungi sistem.
+
+Keputusan penting hari ini:
+- Pipeline boleh berhenti
+- Validasi punya hak veto
+- Semua stage dikontrol config
+
+Insight:
+Banyak sistem data rusak karena tidak ada titik
+di mana data boleh ditolak secara resmi.

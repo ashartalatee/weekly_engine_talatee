@@ -1,0 +1,30 @@
+pipeline:
+  name: extract_clean_pipeline
+  version: "0.1"
+
+  input:
+    source: extract
+
+  stages:
+    - name: extract
+      enabled: true
+      config: extract.yaml
+      output: data/raw/
+
+    - name: clean
+      enabled: true
+      config: clean.yaml
+      input: data/raw/
+      output: data/cleaned/
+
+    - name: validate
+      enabled: true
+      config: validate.yaml
+      input: data/cleaned/
+      on_fail:
+        action: stop_pipeline
+        move_to: data/rejected/
+
+  reports:
+    pipeline_log: reports/pipeline_log.json
+    quality_report: reports/quality_report.json
