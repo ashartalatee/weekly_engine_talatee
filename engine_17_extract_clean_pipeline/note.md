@@ -40,3 +40,17 @@ Keputusan penting hari ini:
 Insight:
 Banyak sistem data rusak karena tidak ada titik
 di mana data boleh ditolak secara resmi.
+
+# Day 03 — Extractor Wrapper
+
+Hari ini saya sadar extractor bukan alat scraping,
+tapi adaptor antara dunia luar dan pipeline.
+
+Keputusan desain:
+- Extractor hanya bertugas memindahkan data
+- Tidak ada cleaning, tidak ada validasi
+- Output selalu file + metadata
+
+Insight:
+Masalah data sering muncul karena extractor terlalu pintar
+dan mencampur tanggung jawab.
