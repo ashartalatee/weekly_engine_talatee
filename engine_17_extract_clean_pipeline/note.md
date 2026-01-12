@@ -54,3 +54,18 @@ Keputusan desain:
 Insight:
 Masalah data sering muncul karena extractor terlalu pintar
 dan mencampur tanggung jawab.
+
+# Day 04 — Cleaner Wrapper
+
+Hari ini saya memisahkan antara:
+- aturan pembersihan
+- mesin pembersihan
+
+Keputusan penting:
+- Semua rule datang dari config
+- Cleaner tidak tahu konteks bisnis
+- Logic dibuat generik dan tahan lama
+
+Insight:
+Cleaner yang terlalu pintar cepat usang.
+Cleaner yang patuh pada config bisa hidup lama.
