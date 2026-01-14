@@ -69,3 +69,19 @@ Keputusan penting:
 Insight:
 Cleaner yang terlalu pintar cepat usang.
 Cleaner yang patuh pada config bisa hidup lama.
+
+# Day 05 — Validator & Quality Gate
+
+Hari ini saya sadar validator bukan alat teknis,
+tapi alat keberanian.
+
+Validator tidak memperbaiki data.
+Ia melindungi sistem dari data buruk.
+
+Keputusan penting:
+- Kualitas data diukur, bukan dirasa
+- Data boleh ditolak secara resmi
+- Pipeline berhak berhenti
+
+Insight:
+Tanpa quality gate, semua laporan adalah kebohongan yang tertunda.
