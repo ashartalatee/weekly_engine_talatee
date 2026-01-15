@@ -85,3 +85,18 @@ Keputusan penting:
 
 Insight:
 Tanpa quality gate, semua laporan adalah kebohongan yang tertunda.
+
+# Day 06 — Pipeline Orchestrator
+
+Hari ini saya berhenti menulis script.
+Saya mulai menulis sistem.
+
+Pipeline tidak peduli bagaimana data diproses.
+Pipeline hanya peduli:
+- urutan
+- keputusan
+- tanggung jawab
+
+Insight:
+Orchestrator yang baik itu bodoh secara teknis,
+tapi pintar secara arsitektur.
