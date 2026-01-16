@@ -100,3 +100,14 @@ Pipeline hanya peduli:
 Insight:
 Orchestrator yang baik itu bodoh secara teknis,
 tapi pintar secara arsitektur.
+
+# Day 07 — Logging & Audit Trail
+
+Hari ini engine saya punya ingatan.
+
+Jika data dipertanyakan,
+saya tidak perlu berargumen —
+saya cukup membuka log.
+
+Insight:
+Tanpa audit trail, kepercayaan hanya ilusi.
