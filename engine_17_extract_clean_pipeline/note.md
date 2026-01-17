@@ -111,3 +111,13 @@ saya cukup membuka log.
 
 Insight:
 Tanpa audit trail, kepercayaan hanya ilusi.
+
+# Day 08 — CLI & User Contract
+
+Hari ini engine saya punya pintu depan.
+
+User tidak perlu tahu apa yang terjadi di dalam,
+dan saya tidak perlu menjelaskan ulang setiap kali.
+
+Insight:
+Kontrak yang jelas lebih penting daripada fitur banyak.
