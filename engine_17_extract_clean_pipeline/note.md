@@ -121,3 +121,12 @@ dan saya tidak perlu menjelaskan ulang setiap kali.
 
 Insight:
 Kontrak yang jelas lebih penting daripada fitur banyak.
+
+# Day 09 — Packaging & Release
+
+Hari ini engine saya punya versi.
+Artinya: saya bertanggung jawab atas masa lalunya.
+
+Insight:
+Engineer tanpa versioning
+adalah engineer yang menyangkal perubahan.

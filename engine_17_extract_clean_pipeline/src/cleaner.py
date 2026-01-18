@@ -1,6 +1,6 @@
 from pathlib import Path
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 class CleaningResult:
@@ -8,7 +8,7 @@ class CleaningResult:
         self.output_path = output_path
         self.rows_before = rows_before
         self.rows_after = rows_after
-        self.cleaned_at = datetime.utcnow().isoformat()
+        self.cleaned_at = datetime.now(timezone.utc).isoformat()
 
 
 class DataCleaner:
@@ -17,6 +17,8 @@ class DataCleaner:
 
     def clean(self, input_file: Path) -> CleaningResult:
         raise NotImplementedError("Cleaner must implement clean()")
+
+
 class SimpleDataCleaner(DataCleaner):
     def clean(self, input_file: Path) -> CleaningResult:
         output_dir = Path("data/cleaned")
@@ -27,15 +29,19 @@ class SimpleDataCleaner(DataCleaner):
 
         rules = self.config.get("rules", {})
 
+        # RULE 1 — Drop empty rows
         if rules.get("drop_empty_rows", False):
             df = df.dropna(how="all")
 
+        # RULE 2 — Trim whitespace (SAFE & FUTURE-PROOF)
         if rules.get("trim_whitespace", False):
-            df = df.applymap(
-                lambda x: x.strip() if isinstance(x, str) else x
-            )
+            for col in df.select_dtypes(include="object").columns:
+                df[col] = df[col].map(
+                    lambda x: x.strip() if isinstance(x, str) else x
+                )
 
-        output_file = output_dir / f"cleaned_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}.csv"
+        timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        output_file = output_dir / f"cleaned_{timestamp}.csv"
         df.to_csv(output_file, index=False)
 
         return CleaningResult(
@@ -43,6 +49,7 @@ class SimpleDataCleaner(DataCleaner):
             rows_before=rows_before,
             rows_after=len(df)
         )
+
 
 if __name__ == "__main__":
     config = {
@@ -52,7 +59,7 @@ if __name__ == "__main__":
         }
     }
 
-    input_file = Path("data/sample_input.csv")
+    input_file = Path("data/raw/sample.csv")
     cleaner = SimpleDataCleaner(config)
     result = cleaner.clean(input_file)
 

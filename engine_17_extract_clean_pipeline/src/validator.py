@@ -1,6 +1,8 @@
 from pathlib import Path
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
+datetime.now(timezone.utc).isoformat()
+
 
 
 class ValidationResult:
@@ -25,11 +27,11 @@ class SimpleDataValidator(DataValidator):
 
         # Missing ratio
         missing_ratio = df.isna().mean().mean()
-        metrics["missing_ratio"] = round(missing_ratio, 4)
+        metrics["missing_ratio"] = float(round(missing_ratio, 4))
 
         # Duplicate ratio
         duplicate_ratio = df.duplicated().mean()
-        metrics["duplicate_ratio"] = round(duplicate_ratio, 4)
+        metrics["duplicate_ratio"] = float(round(duplicate_ratio, 4))
 
         thresholds = self.config.get("thresholds", {})
 
