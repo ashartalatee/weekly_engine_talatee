@@ -1,8 +1,6 @@
 from pathlib import Path
-import pandas as pd
 from datetime import datetime, timezone
-datetime.now(timezone.utc).isoformat()
-
+import pandas as pd
 
 
 class ValidationResult:
@@ -18,23 +16,54 @@ class DataValidator:
 
     def validate(self, input_file: Path) -> ValidationResult:
         raise NotImplementedError("Validator must implement validate()")
+
+
 class SimpleDataValidator(DataValidator):
     def validate(self, input_file: Path) -> ValidationResult:
-        df = pd.read_csv(input_file)
+        # ---------- HARD GUARDS ----------
+        if not input_file.exists():
+            return ValidationResult(
+                passed=False,
+                metrics={"error": "file_not_found"},
+                checked_at=datetime.now(timezone.utc).isoformat()
+            )
 
-        total_rows = len(df)
+        if input_file.stat().st_size == 0:
+            return ValidationResult(
+                passed=False,
+                metrics={"error": "empty_file"},
+                checked_at=datetime.now(timezone.utc).isoformat()
+            )
+
+        try:
+            df = pd.read_csv(input_file)
+        except Exception as e:
+            return ValidationResult(
+                passed=False,
+                metrics={"error": "invalid_csv", "detail": str(e)},
+                checked_at=datetime.now(timezone.utc).isoformat()
+            )
+
+        if df.empty:
+            return ValidationResult(
+                passed=False,
+                metrics={"error": "empty_dataframe"},
+                checked_at=datetime.now(timezone.utc).isoformat()
+            )
+
+        # ---------- METRICS ----------
         metrics = {}
 
-        # Missing ratio
         missing_ratio = df.isna().mean().mean()
-        metrics["missing_ratio"] = float(round(missing_ratio, 4))
-
-        # Duplicate ratio
         duplicate_ratio = df.duplicated().mean()
-        metrics["duplicate_ratio"] = float(round(duplicate_ratio, 4))
 
+        metrics["missing_ratio"] = round(float(missing_ratio), 4)
+        metrics["duplicate_ratio"] = round(float(duplicate_ratio), 4)
+        metrics["row_count"] = int(len(df))
+        metrics["column_count"] = int(len(df.columns))
+
+        # ---------- THRESHOLDS ----------
         thresholds = self.config.get("thresholds", {})
-
         max_missing = thresholds.get("max_missing_ratio", 1.0)
         max_duplicate = thresholds.get("max_duplicate_ratio", 1.0)
 
@@ -46,8 +75,11 @@ class SimpleDataValidator(DataValidator):
         return ValidationResult(
             passed=passed,
             metrics=metrics,
-            checked_at=datetime.utcnow().isoformat()
+            checked_at=datetime.now(timezone.utc).isoformat()
         )
+
+
+# ---------- LOCAL TEST ----------
 if __name__ == "__main__":
     config = {
         "thresholds": {
@@ -62,3 +94,4 @@ if __name__ == "__main__":
 
     print("Passed:", result.passed)
     print("Metrics:", result.metrics)
+    print("Checked at:", result.checked_at)

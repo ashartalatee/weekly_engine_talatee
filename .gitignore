@@ -1,22 +1,17 @@
-# temp & lock files
-.~lock.*
-*.lock
-*.tmp
-
-# Python
+# ==== GLOBAL ====
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# Virtual env
-.venv/
-env/
+# ==== RUNTIME OUTPUT ====
+logs/
+reports/
+data/
 
-# OS / Editor
-.DS_Store
-Thumbs.db
-.~lock.*#
+# ==== TEMP / BACKUP ====
+*.tmp
+*.dotx
+*.txt
 
-# Data hasil run
-reports/*.json
+# ==== PROTECT OTHER ENGINES ====
+../engine_09_multi_file_loader/
+../engine_14_api_fetch_pagination/

@@ -1,0 +1,14 @@
+[project]
+name = "talatee-engine-17"
+version = "0.1.0"
+description = "Extract Clean Pipeline with Quality Gate"
+authors = [
+  { name = "Ashar Talatee" }
+]
+dependencies = [
+  "pandas",
+  "pyyaml"
+]
+
+[project.scripts]
+engine17 = "src.cli:main"

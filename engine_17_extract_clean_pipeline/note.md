@@ -130,3 +130,11 @@ Artinya: saya bertanggung jawab atas masa lalunya.
 Insight:
 Engineer tanpa versioning
 adalah engineer yang menyangkal perubahan.
+
+# Day 10 — Hardening & Reality
+
+Hari ini saya berhenti berharap data baik-baik saja.
+
+Insight:
+Engine profesional tidak optimis.
+Ia waspada.
