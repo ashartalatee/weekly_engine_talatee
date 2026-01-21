@@ -1,0 +1,31 @@
+dataset:
+  required_columns:
+    - id
+    - date
+    - amount
+
+missing_value:
+  severity: warning
+  max_missing_percentage: 5
+
+schema:
+  severity: fail
+  allow_extra_columns: true
+
+uniqueness:
+  severity: fail
+  unique_keys:
+    - id
+
+numeric_range:
+  severity: warning
+  rules:
+    amount:
+      min: 0
+      max: 100000000
+
+date_format:
+  severity: warning
+  accepted_formats:
+    - "%Y-%m-%d"
+    - "%d-%m-%Y"
