@@ -32,3 +32,21 @@ Rule lunak melindungi fleksibilitas bisnis.
 ## Catatan untuk Masa Depan
 Jika semua rule warning,
 berarti aku takut mengambil keputusan.
+
+# NOTE — DAY 3
+
+## Pemahaman Hari Ini
+Validator bukan hakim tunggal.
+Ia saksi yang memberi fakta ke Quality Gate.
+
+## Insight Penting
+Missing value dan schema error
+adalah jenis kerusakan yang paling sering disembunyikan.
+
+## Pertanyaan untuk Diri Sendiri
+- Kenapa schema error harus FAIL cepat?
+- Apakah missing selalu berarti data buruk?
+
+## Catatan untuk Masa Depan
+Jika validator terlalu pintar,
+engine akan kehilangan kendali.
